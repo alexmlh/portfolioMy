@@ -33,14 +33,15 @@
       <h2 class="l-heading">contact me</h2>
       <div class="slash"></div>
       <p class="lead">Here is how you can reach me</p>
-      <form>
+      <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
         <div class="contact-form">
           <input type="text" name="text" id="text" placeholder="Enter Name ">
           <input type="email" name="email" id="email"  placeholder="Enter Email">
           <input type=" text" name="subject"id="subject" placeholder="Subject">
           <input type="text" name="phone" id="phone" placeholder="Phone namber">
-          <textarea name="textarea" id="textarea" rows="5" placeholder="Enter Mesage"></textarea>
+          <textarea name="masage" id="textarea" rows="5" placeholder="Enter Mesage"></textarea>
         </div>
+        <div>data-netlify-recaptcha="true"</div>
         <input type="submit" id="submit" name="submit">
       </form>
     </div>
