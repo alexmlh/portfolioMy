@@ -191,7 +191,7 @@ img {
 .main-A .spec-itm {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
+  -ms-grid-columns: repeat(4, 1fr);
       grid-template-columns: repeat(4, 1fr);
   padding: 0 1rem;
 }
@@ -249,7 +249,7 @@ img {
 .main-C .pros {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
+  /* -ms-grid-columns: repeat(4, 1fr); */
       grid-template-columns: repeat(4, 1fr);
 }
 
@@ -341,7 +341,7 @@ footer li:hover {
 .about-a .about-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
+  /* -ms-grid-columns: (1fr)[3]; */
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
 }
@@ -383,7 +383,7 @@ footer li:hover {
   padding: 1rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
+  -ms-grid-columns: repeat(4, 1fr);
       grid-template-columns: repeat(4, 1fr);
   grid-gap: 5rem;
 }
@@ -399,7 +399,7 @@ footer li:hover {
   display: -ms-grid;
   display: grid;
   grid-gap: 1rem;
-  -ms-grid-columns: (1fr)[4];
+  -ms-grid-columns: repeat(4, 1fr);
       grid-template-columns: repeat(4, 1fr);
 }
 
@@ -514,7 +514,7 @@ footer li:hover {
 #site {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[2];
+  /* -ms-grid-columns: (auto)[2]; */
       grid-template-columns: repeat(2, auto);
   margin: 2rem;
   -webkit-box-shadow: 10px 10px 5px grey;
@@ -572,7 +572,7 @@ footer li:hover {
 .contact-b-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
+  /* -ms-grid-columns: (1fr)[3]; */
       grid-template-columns: repeat(3, 1fr);
   margin: 0 2rem;
 }
@@ -608,7 +608,7 @@ footer li:hover {
         grid-template-columns: 1fr 1fr;
   }
   .main-C .pros {
-    -ms-grid-columns: (1fr)[2];
+    /* -ms-grid-columns: (1fr)[2]; */
         grid-template-columns: repeat(2, 1fr);
   }
 }
