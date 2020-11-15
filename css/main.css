@@ -191,6 +191,7 @@ img {
 .main-A .spec-itm {
   display: -ms-grid;
   display: grid;
+  -ms-grid-template-columns: repeat(4, 1fr);
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   padding: 0 1rem;
@@ -249,6 +250,7 @@ img {
 .main-C .pros {
   display: -ms-grid;
   display: grid;
+  -ms-grid-template-columns: repeat(4, 1fr);
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
 }
@@ -341,6 +343,7 @@ footer li:hover {
 .about-a .about-grid {
   display: -ms-grid;
   display: grid;
+  -ms-grid-template-columns: repeat(3, 1fr);
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
@@ -383,6 +386,7 @@ footer li:hover {
   padding: 1rem;
   display: -ms-grid;
   display: grid;
+  -ms-grid-template-columns: repeat(4, 1fr);
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   grid-gap: 5rem;
@@ -399,6 +403,7 @@ footer li:hover {
   display: -ms-grid;
   display: grid;
   grid-gap: 1rem;
+  -ms-grid-template-columns: repeat(4, 1fr);
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
 }
@@ -514,6 +519,7 @@ footer li:hover {
 #site {
   display: -ms-grid;
   display: grid;
+  -ms-grid-template-columns: repeat(2, auto);
   -ms-grid-columns: (auto)[2];
       grid-template-columns: repeat(2, auto);
   margin: 2rem;
@@ -525,10 +531,12 @@ footer li:hover {
   margin: 2rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 4fr 1fr;
       grid-template-rows: 1fr 1fr 4fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 4fr 1fr;
   grid-gap: 1rem;
 }
 
@@ -572,6 +580,7 @@ footer li:hover {
 .contact-b-grid {
   display: -ms-grid;
   display: grid;
+  -ms-grid-template-columns: repeat(3, 1fr);
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   margin: 0 2rem;
