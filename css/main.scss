@@ -1,12 +1,12 @@
-$website-width: 1280px;
+$website-width: 180px;
 $main-color: #ffbc00;
 $light-color: #f4f4f4;
 $medium-color: #ccc;
 $dark-color: #333;
 $bg-image: url('/img/showcase.jpg');
 
-// @import 'config';
-@import 'utility';
+@import '_config';
+@import '_utility';
 *{
   margin: 0;
   padding: 0;
@@ -407,4 +407,4 @@ footer {
 
 // media queuery--------------------
 
-@import 'media';
+@import '_media';
