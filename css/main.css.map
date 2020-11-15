@@ -4,7 +4,8 @@
     "sources": [
         "main.scss",
         "_utility.scss",
-        "_media.scss"
+        "_media.scss",
+        "_config.scss"
     ],
     "names": [],
     "file": "main.css"
