@@ -15,8 +15,11 @@
   
   .main-C .pros {
     grid-template-columns: repeat(2, 1fr);
-  }
-  
+  }  
+}
+
+.about-d-grid {
+  grid-template-columns: repeat(2,1fr);
 }
 
 @media(max-width: 500px) {

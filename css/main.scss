@@ -1,12 +1,12 @@
-$website-width: 180px;
+$website-width: 1280px;
 $main-color: #ffbc00;
 $light-color: #f4f4f4;
 $medium-color: #ccc;
 $dark-color: #333;
 $bg-image: url('/img/showcase.jpg');
 
-@import '_config';
-@import '_utility';
+@import 'config';
+@import 'utility';
 *{
   margin: 0;
   padding: 0;
@@ -45,7 +45,7 @@ img {
 }
 
 #main-nav {
-  top: 0;
+  // top: 0;
   display: flex;
   justify-content: space-between;
   padding: 0 1rem ;
@@ -56,7 +56,7 @@ img {
       a {
         color: white;
         text-transform: uppercase;
-        display:block;
+        // display:block;
         }
         &:hover {
           div {
@@ -69,7 +69,7 @@ img {
           background-color: white;
           margin-top: .4rem;
           opacity: 0;
-          transition: all .5s;
+          transition: all .3s;
          
         }
       .current {
@@ -102,29 +102,27 @@ img {
     border-bottom: $main-color 2px solid;
     font-weight: 100;
   }
-  & > p{
+  > p{
     font-size: 1.3rem;
     margin-bottom: 2rem;
   }
   .spec-itm {
     display: grid;
-    -ms-grid-template-columns: repeat(4, 1fr);
     grid-template-columns: repeat(4, 1fr);
     padding: 0 1rem; 
     div {
       text-align: center;
-      padding: .5rem;
-     
-    i {
-        color: $main-color;
-      }
+      padding: .5rem; 
+      i {
+          color: $main-color;
+        }
     }
   }
 }
 
 .main-B {
   margin-top: 3rem;
-  width: 100%;
+  // width: 100%;
   display: flex;
   div {
     flex: 1;
@@ -154,51 +152,45 @@ img {
   }
   .pros {
     display: grid;
-    -ms-grid-template-columns: repeat(4,1fr);
     grid-template-columns: repeat(4,1fr);
     div {padding: 1rem;}
     > div i {
-      transition: all .2s;
-      .namb {
-        height: 25px;
-        width: 25px;
-        line-height: 10px;
-      }
-    }
-    > div > i:hover  {
-      transform: scale(1.2);
-      background-color: $main-color;
-      .namb {
+      height: 90px;
+        width: 90px;
+        line-height: 90px;
+        position: relative;
         background-color: $dark-color;
-      
+        color: white;
+        border-radius: 50%;
+        margin: 2rem 0;
+        transition: all .2s;
+        .namb {
+          position: absolute;
+          font-size: 25px;
+          height: 25px;
+          width: 25px;
+          line-height: 10px;
+          top: 0;
+          right: 0;
+          padding: .5rem;
+          border-radius: 50%;
+          background-color: $main-color;
+          transition: inherit;
+        }
+        &:hover  {
+          transform: scale(1.2);
+          background-color: $main-color;
+          .namb {
+            transform: scale(1.2);
+            background-color: $dark-color;
+          
+          }
+        }
       }
     }
     
-    i {
-      height: 90px;
-      width: 90px;
-      line-height: 90px;
-      position: relative;
-      background-color: $dark-color;
-      color: white;
-      border-radius: 50%;
-      margin: 2rem 0;
-      .namb {
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        line-height: 20px;
-        top: 0;
-        right: 0;
-        padding: .5rem;
-        border-radius: 50%;
-        background-color: $main-color;
-        transition: all .5s;
-        font-size: 25px;
-      }
-    }
   }
-}
+
 footer {
   background-color: $dark-color;
   .foot { 
@@ -224,7 +216,6 @@ footer {
   text-align: center;
   .about-grid {
     display: grid;
-    -ms-grid-template-columns: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
     .bio {
@@ -260,7 +251,6 @@ footer {
   background-color: $light-color;
   padding: 1rem;
   display: grid;
-  -ms-grid-template-columns: repeat(4, 1fr);
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5rem;
   img {
@@ -269,13 +259,12 @@ footer {
 }
 
 .about-d-grid {
+  grid-template-columns: repeat(4,1fr);
   margin-bottom: 2rem;
   text-align: center;
   padding: 1rem;
   display: grid;
   grid-gap: 1rem;
-  -ms-grid-template-columns: repeat(4,1fr);
-  grid-template-columns: repeat(4,1fr);
   >div >p {
     border: 1px $medium-color solid;
     border-radius: 5px;
@@ -295,11 +284,18 @@ footer {
 
 
 // new--------------------
+#site {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin: 2rem;
+  box-shadow: 10px 10px 5px grey;
+}
+
 #site .over {
-  &:nth-child(1) .bac {background: url(/img/items/item1.png)center center/cover;}
-  &:nth-child(2) .bac {background: url(/img/items/item2.png)center center/cover;}
-  &:nth-child(3) .bac {background: url(/img/items/item3.png)center center/cover;}
-  &:nth-child(4) .bac {background: url(/img/items/item4.png)center center/cover;}
+  &:nth-child(1) .bac {background: url(/img/items/news-site.png)center center/cover;}
+  &:nth-child(2) .bac {background: url(/img/items/hotel-site.png)center center/cover;}
+  &:nth-child(3) .bac {background: url(/img/items/knowlege-resume.png)center center/cover;}
+  &:nth-child(4) .bac {background: url(/img/items/EdgeLedger.png)center center/cover;}
   &:nth-child(5) .bac {background: url(/img/items/item5.png)center center/cover;}
   &:nth-child(6) .bac {background: url(/img/items/item6.png)center center/cover;}
 }
@@ -307,8 +303,9 @@ footer {
   flex: 1;
   overflow: hidden; 
   width: 100%;
-  height: 300px;
+  height: 300px;  
  .bac {
+    transform: scale(1.1);
     transition: all .5s;
     width: inherit;
     height: inherit;
@@ -335,7 +332,7 @@ footer {
     &:hover {
       transform: scale(1.5);
       .main{
-        background-color: rgba($color: orange , $alpha: 0.7);
+        background-color: rgba($color: orange , $alpha: 0.5);
         h4 {
           transform: scaleY(1);
           opacity: 1;
@@ -345,26 +342,16 @@ footer {
   }
 }
 
-#site {
-  display: grid;
-  -ms-grid-template-columns: repeat(2, auto);
-  grid-template-columns: repeat(2, auto);
-  margin: 2rem;
-  box-shadow: 10px 10px 5px grey;
-}
 
 .contact-a {
   .contact-form {
     margin: 2rem;
     display: grid;
-    -ms-grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 4fr 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 4fr 1fr;
+    grid-template-rows: 1fr 1fr 4fr;
     grid-gap: 1rem;
     textarea {
       padding: .5rem 1rem;
-
       }
     input {
       padding: 0.5rem 1rem;
@@ -395,7 +382,6 @@ footer {
 
 .contact-b-grid {
   display: grid;
-  -ms-grid-template-columns: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
   margin: 0 2rem;
   div {
