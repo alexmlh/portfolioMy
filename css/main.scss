@@ -1,9 +1,3 @@
-$website-width: 1280px;
-$main-color: #ffbc00;
-$light-color: #f4f4f4;
-$medium-color: #ccc;
-$dark-color: #333;
-$bg-image: url('/img/showcase.jpg');
 
 @import 'config';
 @import 'utility';
@@ -292,12 +286,12 @@ footer {
 }
 
 #site .over {
-  &:nth-child(1) .bac {background: url(/img/items/news-site.png)center center/cover;}
-  &:nth-child(2) .bac {background: url(/img/items/hotel-site.png)center center/cover;}
-  &:nth-child(3) .bac {background: url(/img/items/knowlege-resume.png)center center/cover;}
-  &:nth-child(4) .bac {background: url(/img/items/EdgeLedger.png)center center/cover;}
-  &:nth-child(5) .bac {background: url(/img/items/item5.png)center center/cover;}
-  &:nth-child(6) .bac {background: url(/img/items/item6.png)center center/cover;}
+  &:nth-child(1) .bac {background: url(./img/items/news-site.png)center center/cover;}
+  &:nth-child(2) .bac {background: url(./img/items/hotel-site.png)center center/cover;}
+  &:nth-child(3) .bac {background: url(./img/items/knowlege-resume.png)center center/cover;}
+  &:nth-child(4) .bac {background: url(./img/items/EdgeLedger.png)center center/cover;}
+  &:nth-child(5) .bac {background: url(./img/items/item5.png)center center/cover;}
+  &:nth-child(6) .bac {background: url(./img/items/item6.png)center center/cover;}
 }
 .over {
   flex: 1;
