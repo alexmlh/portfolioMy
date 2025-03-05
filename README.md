@@ -13,7 +13,6 @@ Features
 
 Technologies Used
 -----------------
-- React.js
 - JavaScript
 - CSS
 - Deployment via GitHub Pages
